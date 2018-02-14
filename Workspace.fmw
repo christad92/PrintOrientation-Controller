@@ -17,7 +17,7 @@
 #!   CATEGORY="Mapping"
 #!   TERMINATE_REJECTED="YES"
 #!   SHOW_INFO_NODES="true"
-#!   DESCRIPTION="&lt;p&gt;This workbench is a simple workspace for calculating the ratio of the bounds of features in a feature layer to decide the best orientation for document. &lt;/p&gt;&#10;&lt;p&gt;&lt;strong&gt;Pseudocode: &lt;/strong&gt;&#10;Ratio = &#10;(x_max($geometry)-x_min($geometry))/(y_max($geometry)-y_min($geometry))&lt;/p&gt;&#10;&lt;p&gt;PrintOrientation = &#10;Case&#10;when &quot;Ratio&quot; &amp;gt; 1 then &apos;Landscape&apos;&#10;when &quot;Ratio&quot; &amp;lt;= 1 then &apos;Portrait&apos;&#10;end&lt;/p&gt;&#10;&lt;p&gt;def calcPrintOrient(Ratio):&#10;       if Ratio &amp;gt; 0:&#10;       Dir = &quot;Landscape&quot;&#10; else:&#10;       Dir = &quot;Portrait&quot;&#10;       return Dir&lt;/p&gt;&#10;&lt;p&gt;calcPrintOrient((!shape.extent.XMax!-!shape.extent.XMin!)-(!shape.extent.YMax!-!shape.extent.YMin!))&lt;/p&gt;"
+#!   DESCRIPTION="&lt;p&gt;Printing the orientation of a specific feature layer based on bound ratios.&lt;/p&gt;"
 #!   MARKDOWN_USAGE=""
 #!   LOG_FILE=""
 #!   PASSWORD=""
@@ -28,12 +28,12 @@
 #!   BEGIN_PYTHON=""
 #!   FME_DOCUMENT_PRIORGUID="22beaf37-2b31-4413-8b3a-679c19df05f9"
 #!   REDIRECT_TERMINATORS="NONE"
-#!   TITLE="Print Orientation Controller"
-#!   LAST_SAVE_DATE="2018-02-14T17:41:23"
+#!   TITLE="Workspace"
+#!   LAST_SAVE_DATE="2018-02-14T17:52:43"
 #!   HISTORY=""
 #!   BEGIN_TCL=""
 #!   SOURCE_ROUTING_FILE=""
-#!   MARKDOWN_DESCRIPTION="This workbench is a simple workspace for calculating the ratio of the bounds of features in a feature layer to decide the best orientation for document. &#10;&#10;**Pseudocode: **&#10;Ratio = &#10;(x_max($geometry)-x_min($geometry))/(y_max($geometry)-y_min($geometry))&#10;&#10;PrintOrientation = &#10;Case&#10;when &quot;Ratio&quot; &gt; 1 then &apos;Landscape&apos;&#10;when &quot;Ratio&quot; &lt;= 1 then &apos;Portrait&apos;&#10;end&#10;&#10;def calcPrintOrient(Ratio):&#10;       if Ratio &gt; 0:&#10;       Dir = &quot;Landscape&quot;&#10; else:&#10;       Dir = &quot;Portrait&quot;&#10;       return Dir&#10; &#10;calcPrintOrient((!shape.extent.XMax!-!shape.extent.XMin!)-(!shape.extent.YMax!-!shape.extent.YMin!))"
+#!   MARKDOWN_DESCRIPTION="Printing the orientation of a specific feature layer based on bound ratios."
 #!   USE_MARKDOWN="YES"
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   DESTINATION_ROUTING_FILE=""
@@ -1816,7 +1816,7 @@ FME_REPROJECTION_ENGINE FME
 FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
-MAPPING_FILE_ID Print<space>Orientation<space>Controller
+MAPPING_FILE_ID Workspace
 LOG_FILTER_MASK -1
 DEFAULT_MACRO DATASET_KEYWORD_SPATIALITE_1 SPATIALITE_1
 DEFAULT_MACRO DATASET_KEYWORD_SPATIALITE_2 SPATIALITE_2
@@ -1868,9 +1868,9 @@ FACTORY_DEF * SortFactory    FACTORY_NAME Merger_Layer    INPUT  FEATURE_TYPE La
 
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_913f03ee_89f1_4611_991f_c3a50aa1ef754_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_913f03ee_89f1_4611_991f_c3a50aa1ef756_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE Merger_Layer_OUTPUT    OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,lgacode,lganame,orientation,statecode,ratio,statename,fme_pcre_match,"^fme_$(AttributeKeeper_913f03ee_89f1_4611_991f_c3a50aa1ef754_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE Merger_Layer_OUTPUT    OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,lgacode,lganame,orientation,statecode,ratio,statename,fme_pcre_match,"^fme_$(AttributeKeeper_913f03ee_89f1_4611_991f_c3a50aa1ef756_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
