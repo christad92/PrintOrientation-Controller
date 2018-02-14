@@ -26,8 +26,10 @@ def calcPrintOrient(Ratio):
  else:
        Dir = "Portrait"
        return Dir
-calcPrintOrient((!shape.extent.XMax!-!shape.extent.XMin!)-(!shape.extent.YMax!-!shape.extent.YMin!))
+```
 
+``` QGIS
+calcPrintOrient((!shape.extent.XMax!-!shape.extent.XMin!)-(!shape.extent.YMax!-!shape.extent.YMin!))
 ```
 
 ## Local Setup
@@ -43,6 +45,7 @@ With the resulting map, All you need to do as a user will be to set the orientat
 ## Contact
 
 In case you have any questions or assitance on any thinge related, please contact mevia any of these channels.
-Name: Ayodele Adeyemo
-Email: christad92@gmail.com
-Phone: +2348148796747
+
+*Name: Ayodele Adeyemo
+*Email: christad92@gmail.com
+*Phone: +2348148796747
