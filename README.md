@@ -30,6 +30,10 @@ calcPrintOrient((!shape.extent.XMax!-!shape.extent.XMin!)-(!shape.extent.YMax!-!
 
 ```
 
+## Local Setup
+
+For you to use this, I recommend that you use FME 2017 to load the workspace. I have also added a template (.fmwt) which has the test data bundled with it.
+
 ## What I Did
 
 I have used FME to automate the process of orientation control process by calculating the ratio of the x and y axis of each layer. The result helps in determining if the layer is best presented as a Landscape or Portriat.
