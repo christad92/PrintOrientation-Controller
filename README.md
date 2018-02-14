@@ -17,9 +17,22 @@ when "Ratio" <= 1 then 'Portrait'
 end
 ```
 
+``` Python
+#This works in QGIS
+
+def calcPrintOrient(Ratio):
+       if Ratio > 0:
+       Dir = "Landscape"
+ else:
+       Dir = "Portrait"
+       return Dir
+calcPrintOrient((!shape.extent.XMax!-!shape.extent.XMin!)-(!shape.extent.YMax!-!shape.extent.YMin!))
+
+```
+
 ## What I Did
 
-I have used FME to automate the process of orientation control process by calculating the ratio of the x and y axis of each layer. The result helps in determining if the layer is best presented as a Landscape or Portriat. 
+I have used FME to automate the process of orientation control process by calculating the ratio of the x and y axis of each layer. The result helps in determining if the layer is best presented as a Landscape or Portriat.
 
 With the resulting map, All you need to do as a user will be to set the orientation field in your layout/map engine to the orientation attribute of your layer.
 
