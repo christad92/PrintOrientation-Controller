@@ -46,6 +46,6 @@ With the resulting map, All you need to do as a user will be to set the orientat
 
 In case you have any questions or assitance on any thinge related, please contact mevia any of these channels.
 
-*Name: Ayodele Adeyemo
-*Email: christad92@gmail.com
-*Phone: +2348148796747
+* Name: Ayodele Adeyemo
+* Email: christad92@gmail.com
+* Phone: +2348148796747
