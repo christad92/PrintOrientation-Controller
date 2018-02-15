@@ -6,55 +6,56 @@
 #    
 #    
 #    "C:\Program Files\FME\fme.exe" "D:\Personal\Print Orientation\PrintOrientation-Controller\Workspace.fmw"
-#          --SourceDataset_SPATIALITE "D:\Personal\Print Orientation\PrintOrientation-Controller\Data\LGALayer.sqlite"
 #          --DestDataset_SPATIALITE "D:\Personal\Print Orientation\PrintOrientation-Controller\Data\LGALayer.sqlite"
+#          --SourceDataset_SPATIALITE "D:\Personal\Print Orientation\PrintOrientation-Controller\Data\LGALayer.sqlite"
+#          --DestDataset_SPATIALITE_4 "D:\Personal\Print Orientation\PrintOrientation-Controller\Data\LGALayer_Output.sqlite"
 #    
 #    
-#!   DOC_TOP_LEFT="-209.168 -843.758"
-#!   FME_REPROJECTION_ENGINE="FME"
-#!   SHOW_ANNOTATIONS="true"
 #!   WORKSPACE_VERSION="1"
-#!   CATEGORY="Mapping"
-#!   TERMINATE_REJECTED="YES"
-#!   SHOW_INFO_NODES="true"
-#!   DESCRIPTION="&lt;p&gt;Printing the orientation of a specific feature layer based on bound ratios.&lt;/p&gt;"
-#!   MARKDOWN_USAGE=""
-#!   LOG_FILE=""
-#!   PASSWORD=""
-#!   SOURCE="NONE"
-#!   PYTHON_COMPATIBILITY="27"
-#!   IGNORE_READER_FAILURE="No"
-#!   EXPLICIT_BOOKMARK_ORDER="false"
-#!   BEGIN_PYTHON=""
-#!   FME_DOCUMENT_PRIORGUID="22beaf37-2b31-4413-8b3a-679c19df05f9"
-#!   REDIRECT_TERMINATORS="NONE"
-#!   TITLE="Workspace"
-#!   LAST_SAVE_DATE="2018-02-14T17:52:43"
-#!   HISTORY=""
-#!   BEGIN_TCL=""
-#!   SOURCE_ROUTING_FILE=""
-#!   MARKDOWN_DESCRIPTION="Printing the orientation of a specific feature layer based on bound ratios."
-#!   USE_MARKDOWN="YES"
-#!   ATTR_TYPE_ENCODING="SDF"
-#!   DESTINATION_ROUTING_FILE=""
-#!   END_PYTHON=""
-#!   FME_DOCUMENT_GUID="73f8a8bb-fc02-4409-8805-8978d2332a14"
-#!   DESTINATION="NONE"
-#!   FME_GEOMETRY_HANDLING="Enhanced"
-#!   FME_BUILD_NUM="17539"
-#!   WARN_INVALID_XFORM_PARAM="Yes"
-#!   ZOOM_SCALE="80"
-#!   FME_STROKE_MAX_DEVIATION="0"
-#!   VIEW_POSITION="-706.257 359.379"
-#!   MAX_LOG_FEATURES="200"
-#!   FME_SERVER_SERVICES=""
-#!   DOC_EXTENTS="3426.84 1000.43"
-#!   END_TCL=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
-#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
-#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_BUILD_NUM="17539"
+#!   SHOW_ANNOTATIONS="true"
+#!   FME_DOCUMENT_GUID="d15b36bd-0fab-40aa-8750-b96d12225491"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   USAGE=""
+#!   DESTINATION="NONE"
+#!   END_PYTHON=""
+#!   DESCRIPTION="&lt;p&gt;Printing the orientation of a specific feature layer based on bound ratios.&lt;/p&gt;&#10;"
+#!   ZOOM_SCALE="80"
+#!   CATEGORY="Mapping"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   TERMINATE_REJECTED="YES"
+#!   HISTORY=""
+#!   USE_MARKDOWN="YES"
+#!   BEGIN_PYTHON=""
+#!   SOURCE_ROUTING_FILE=""
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   PYTHON_COMPATIBILITY="27"
+#!   DESTINATION_ROUTING_FILE=""
+#!   FME_DOCUMENT_PRIORGUID="22beaf37-2b31-4413-8b3a-679c19df05f9,73f8a8bb-fc02-4409-8805-8978d2332a14,9b8dde19-e91d-4cae-ac8a-bd3d990c7dbb"
 #!   LAST_SAVE_BUILD="FME(R) 2017.1.0.0 (20170731 - Build 17539 - WIN64)"
+#!   TITLE="Workspace"
+#!   FME_SERVER_SERVICES=""
+#!   BEGIN_TCL=""
+#!   VIEW_POSITION="-703.132 356.254"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   PASSWORD=""
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   IGNORE_READER_FAILURE="No"
+#!   SHOW_INFO_NODES="true"
+#!   LAST_SAVE_DATE="2018-02-15T10:16:55"
+#!   LOG_FILE=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   END_TCL=""
+#!   DOC_EXTENTS="3426.84 1000.43"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   MARKDOWN_DESCRIPTION="Printing the orientation of a specific feature layer based on bound ratios."
+#!   MAX_LOG_FEATURES="200"
+#!   SOURCE="NONE"
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   MARKDOWN_USAGE=""
+#!   DOC_TOP_LEFT="-209.168 -843.763"
 #! >
 #! <DATASETS>
 #! <DATASET
@@ -70,7 +71,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="spatialite_type {FME_GEN_GEOMETRY}"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_feature_type string(50) fme_basename string(50) multi_reader_full_id integer multi_reader_type string(50) fme_color string(50) fme_secondary_axis real(31,15) fme_type string(50) spatialite_type string(255) fme_dataset string(50) fme_primary_axis real(31,15) fme_sweep_angle real(31,15) multi_reader_keyword string(50) fme_rotation real(31,15) fme_geometry fme_char(50) fme_text_size real(31,15) fme_start_angle real(31,15) fme_fill_color string(50) multi_reader_id integer fme_text_string string(50) spatialite_id integer64"
+#!   EXPOSABLE_ATTRS="multi_reader_id integer fme_rotation real(31,15) fme_sweep_angle real(31,15) fme_feature_type string(50) spatialite_id integer64 fme_geometry fme_char(50) fme_dataset string(50) fme_primary_axis real(31,15) fme_type string(50) fme_basename string(50) multi_reader_type string(50) fme_text_string string(50) fme_text_size real(31,15) multi_reader_keyword string(50) multi_reader_full_id integer fme_start_angle real(31,15) spatialite_type string(255) fme_fill_color string(50) fme_secondary_axis real(31,15) fme_color string(50)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -79,21 +80,13 @@
 #!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #!   DATASET_TYPE="FILE"
 #!   GENERATE_FME_BUILD_NUM="17539"
+#!   MIN_FEATURES=""
 #!   COORDSYS=""
 #!   MAX_FEATURES_PER_FEATURE_TYPE=""
-#!   MIN_FEATURES=""
-#!   MAX_FEATURES=""
 #!   START_FEATURE=""
+#!   MAX_FEATURES=""
 #!   FEATURE_TYPES=""
 #! >
-#! <METAFILE_PARAMETER
-#!   NAME="ADVANCED_PARMS"
-#!   VALUE="SPATIALITE_OUT_ENCODING TRANSACTION_SIZE"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="WRITER_DATASET_HINT"
-#!   VALUE="Specify a name for the SpatiaLite file"
-#! />
 #! <METAFILE_PARAMETER
 #!   NAME="DATASET_NAME"
 #!   VALUE="sl3 file"
@@ -107,12 +100,20 @@
 #!   VALUE="Select the SpatiaLite file(s)"
 #! />
 #! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_NAME"
-#!   VALUE="Table"
-#! />
-#! <METAFILE_PARAMETER
 #!   NAME="FEATURE_TYPE_DEFAULT_NAME"
 #!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the SpatiaLite file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="SPATIALITE_OUT_ENCODING TRANSACTION_SIZE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
 #! />
 #! </DATASET>
 #! <DATASET
@@ -128,7 +129,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="spatialite_type {FME_GEN_GEOMETRY} spatialite_overwrite_tables deprecated spatialite_create_spatial_index Yes spatialite_compress_geometry No fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_ID fme_match_id_attribute &quot;spatialite_id&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_text_string string(50) fme_start_angle real(31,15) fme_type string(50) fme_dataset string(50) fme_basename string(50) fme_fill_color string(50) fme_rotation real(31,15) spatialite_type string(255) fme_color string(50) fme_primary_axis real(31,15) fme_secondary_axis real(31,15) fme_sweep_angle real(31,15) fme_text_size real(31,15) fme_feature_type string(50) fme_geometry fme_char(50)"
+#!   EXPOSABLE_ATTRS="fme_start_angle real(31,15) fme_sweep_angle real(31,15) fme_color string(50) fme_feature_type string(50) fme_text_string string(50) fme_basename string(50) fme_dataset string(50) fme_rotation real(31,15) fme_geometry fme_char(50) fme_fill_color string(50) fme_type string(50) fme_text_size real(31,15) spatialite_type string(255) fme_secondary_axis real(31,15) fme_primary_axis real(31,15)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE Table Handling&quot; CREATE_IF_MISSING &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_match_id_attribute Row Selection&quot; &quot;&quot; &quot;GUI WHOLE_LINE ATTR fme_match_id_attribute \&quot; \&quot; ID Attribute&quot; spatialite_id &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group spatialite_compress_geometry%spatialite_create_spatial_index Table Creation Parameters&quot; &quot;&quot; &quot;GUI CHOICE spatialite_compress_geometry Yes%No Compress Geometry&quot; No &quot;GUI CHOICE spatialite_create_spatial_index Yes%No Create Spatial Index&quot; Yes "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS="\\/&quot;:?*&lt;&gt;|[# &apos;&amp;+-{}]."
@@ -142,14 +143,6 @@
 #!   FANOUT_EXPRESSION="&lt;Unused&gt;"
 #! >
 #! <METAFILE_PARAMETER
-#!   NAME="ADVANCED_PARMS"
-#!   VALUE="SPATIALITE_OUT_ENCODING TRANSACTION_SIZE"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="WRITER_DATASET_HINT"
-#!   VALUE="Specify a name for the SpatiaLite file"
-#! />
-#! <METAFILE_PARAMETER
 #!   NAME="DATASET_NAME"
 #!   VALUE="sl3 file"
 #! />
@@ -162,12 +155,75 @@
 #!   VALUE="Select the SpatiaLite file(s)"
 #! />
 #! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the SpatiaLite file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="SPATIALITE_OUT_ENCODING TRANSACTION_SIZE"
+#! />
+#! <METAFILE_PARAMETER
 #!   NAME="FEATURE_TYPE_NAME"
 #!   VALUE="Table"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="SPATIALITE"
+#!   DATASET="$(DestDataset_SPATIALITE_4)"
+#!   KEYWORD="SPATIALITE_3"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="256"
+#!   ATTR_CASE="LOWER"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="spatialite_type {FME_GEN_GEOMETRY} spatialite_overwrite_tables deprecated spatialite_create_spatial_index Yes spatialite_compress_geometry No fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_ID fme_match_id_attribute &quot;spatialite_id&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_start_angle real(31,15) fme_sweep_angle real(31,15) fme_color string(50) fme_feature_type string(50) fme_basename string(50) fme_text_string string(50) fme_dataset string(50) fme_geometry fme_char(50) fme_rotation real(31,15) fme_fill_color string(50) fme_text_size real(31,15) fme_type string(50) fme_secondary_axis real(31,15) spatialite_type string(255) fme_primary_axis real(31,15)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE Table Handling&quot; CREATE_IF_MISSING &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_match_id_attribute Row Selection&quot; &quot;&quot; &quot;GUI WHOLE_LINE ATTR fme_match_id_attribute \&quot; \&quot; ID Attribute&quot; spatialite_id &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group spatialite_compress_geometry%spatialite_create_spatial_index Table Creation Parameters&quot; &quot;&quot; &quot;GUI CHOICE spatialite_compress_geometry Yes%No Compress Geometry&quot; No &quot;GUI CHOICE spatialite_create_spatial_index Yes%No Create Spatial Index&quot; Yes "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS="\\/&quot;:?*&lt;&gt;|[# &apos;&amp;+-{}]."
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   GENERATE_FME_BUILD_NUM="17539"
+#!   COORDSYS=""
+#!   FANOUT_GROUP="NO"
+#!   FANOUT_EXPRESSION=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="sl3 file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the SpatiaLite file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
 #! />
 #! <METAFILE_PARAMETER
 #!   NAME="FEATURE_TYPE_DEFAULT_NAME"
 #!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the SpatiaLite file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="SPATIALITE_OUT_ENCODING TRANSACTION_SIZE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
 #! />
 #! </DATASET>
 #! </DATASETS>
@@ -1201,17 +1257,17 @@
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #!   IS_SOURCE="false"
-#!   NODE_NAME="layers_with_orentation"
+#!   NODE_NAME="adminbounds_output"
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER=""
 #!   IS_EDITABLE="true"
 #!   IDENTIFIER="24"
 #!   FEAT_GEOMTYPE="wkb_polygon"
-#!   POSITION="2695.67 -342.779"
-#!   BOUNDING_RECT="2695.67 -342.779 -1 -1"
+#!   POSITION="2688.38 -342.779"
+#!   BOUNDING_RECT="2688.38 -342.779 -1 -1"
 #!   ORDER="5e+14"
 #!   COLLAPSED="true"
-#!   KEYWORD="SPATIALITE_2"
+#!   KEYWORD="SPATIALITE_3"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
 #!   SCHEMA_ATTRIBUTE_SOURCE="1"
@@ -1222,28 +1278,33 @@
 #!     <FEAT_ATTRIBUTE ATTR_NAME="statename" ATTR_TYPE="string(25)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="ratio" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="orientation" ATTR_TYPE="string(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="fme_configuration_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="spatialite_compress_geometry" PARM_VALUE="No"/>
 #!     <DEFLINE_PARM PARM_NAME="fme_feature_operation" PARM_VALUE="INSERT"/>
-#!     <DEFLINE_PARM PARM_NAME="fme_match_id_attribute" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <DEFLINE_PARM PARM_NAME="spatialite_create_spatial_index" PARM_VALUE="Yes"/>
 #!     <DEFLINE_PARM PARM_NAME="fme_table_handling" PARM_VALUE="CREATE_IF_MISSING"/>
+#!     <DEFLINE_PARM PARM_NAME="spatialite_create_spatial_index" PARM_VALUE="Yes"/>
 #!     <DEFLINE_PARM PARM_NAME="fme_table_creation_group" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <DEFLINE_PARM PARM_NAME="fme_selection_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_match_id_attribute" PARM_VALUE="&lt;Unused&gt;"/>
 #! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_SPATIALITE SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|* SpatiaLite Database"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)Data\LGALayer.sqlite"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI MULTIFILE SourceDataset_SPATIALITE SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|* SpatiaLite Database"
 #!   DEFAULT_VALUE="$(FME_MF_DIR)Data\LGALayer.sqlite"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI FILENAME DestDataset_SPATIALITE SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|* SpatiaLite Database"
-#!   DEFAULT_VALUE="$(FME_MF_DIR)Data\LGALayer.sqlite"
+#!   GUI_LINE="GUI FILENAME DestDataset_SPATIALITE_4 SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|* SpatiaLite Database"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)Data\LGALayer_Output.sqlite"
 #!   IS_STAND_ALONE="false"
 #! />
 #! </GLOBAL_PARAMETERS>
@@ -1258,7 +1319,7 @@
 #!   ORDER="5e+14"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.784314,0.196078"
+#!   COLOUR="1,1,0.784314,0.192157"
 #!   SIZE_POLICY="8"
 #!   COMMENT_TYPE="REGULAR"
 #!   ANCHORED_NODE="3"
@@ -1273,7 +1334,7 @@
 #!   ORDER="5e+14"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.784314,0.196078"
+#!   COLOUR="1,1,0.784314,0.192157"
 #!   SIZE_POLICY="8"
 #!   COMMENT_TYPE="REGULAR"
 #!   ANCHORED_NODE="6"
@@ -1288,7 +1349,7 @@
 #!   ORDER="5e+14"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.784314,0.196078"
+#!   COLOUR="1,1,0.784314,0.192157"
 #!   SIZE_POLICY="8"
 #!   COMMENT_TYPE="REGULAR"
 #!   ANCHORED_NODE="9"
@@ -1303,7 +1364,7 @@
 #!   ORDER="5e+14"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.784314,0.196078"
+#!   COLOUR="1,1,0.784314,0.192157"
 #!   SIZE_POLICY="8"
 #!   COMMENT_TYPE="REGULAR"
 #!   ANCHORED_NODE="20"
@@ -1318,7 +1379,7 @@
 #!   ORDER="5e+14"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.784314,0.196078"
+#!   COLOUR="1,1,0.784314,0.192157"
 #!   SIZE_POLICY="8"
 #!   COMMENT_TYPE="REGULAR"
 #!   ANCHORED_NODE="17"
@@ -1330,24 +1391,24 @@
 #! <BOOKMARK
 #!   IDENTIFIER="16"
 #!   NAME="Defines category Port/Landsape"
-#!   DESCRIPTION=""
+#!   DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   TOP_LEFT="1277.79 -140.279"
 #!   BOTTOM_RIGHT="1905.02 -600.283"
 #!   BOUNDING_RECT="1277.79 -140.279 627.228 460.004"
 #!   STICKY="true"
-#!   COLOUR="0.964706,0.870588,0.168627"
-#!   CONTENTS="14 12 "
+#!   COLOUR="0.964706,0.866667,0.164706"
+#!   CONTENTS="12 14 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="26"
 #!   NAME="Calculate Map Orientation for Feature layers"
 #!   DESCRIPTION="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   TOP_LEFT="-209.168 156.667"
-#!   BOTTOM_RIGHT="3217.67 -843.758"
+#!   BOTTOM_RIGHT="3217.67 -843.763"
 #!   BOUNDING_RECT="-209.168 156.667 3426.84 1000.43"
 #!   STICKY="true"
-#!   COLOUR="0.466667,0.0823529,0.231373"
-#!   CONTENTS="24 3 12 7 5 23 21 4 13 25 19 16 17 6 22 20 11 15 14 8 10 2 18 9 "
+#!   COLOUR="0.466667,0.0784314,0.231373"
+#!   CONTENTS="23 5 16 12 24 15 14 10 9 3 17 13 21 7 8 11 18 22 20 4 6 19 2 "
 #! />
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
@@ -1372,15 +1433,15 @@
 #!     <XFORM_ATTR ATTR_NAME="xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="ZMAX" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ZMIN" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="YMIN" PARM_VALUE="ymin"/>
 #!     <XFORM_PARM PARM_NAME="XMAX" PARM_VALUE="xmax"/>
-#!     <XFORM_PARM PARM_NAME="YMAX" PARM_VALUE="ymax"/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="BoundsExtractor"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XMIN" PARM_VALUE="xmin"/>
+#!     <XFORM_PARM PARM_NAME="YMAX" PARM_VALUE="ymax"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="BoundsExtractor"/>
+#!     <XFORM_PARM PARM_NAME="ZMAX" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="YMIN" PARM_VALUE="ymin"/>
+#!     <XFORM_PARM PARM_NAME="ZMIN" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="6"
@@ -1406,16 +1467,16 @@
 #!     <XFORM_ATTR ATTR_NAME="xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
-#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; diff_x SET_TO &lt;at&gt;min&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;xmax&lt;closeparen&gt;&lt;comma&gt;&lt;at&gt;Value&lt;openparen&gt;xmin&lt;closeparen&gt;&lt;closeparen&gt;  diff_y SET_TO &lt;at&gt;min&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;ymax&lt;closeparen&gt;&lt;comma&gt;&lt;at&gt;Value&lt;openparen&gt;ymin&lt;closeparen&gt;&lt;closeparen&gt;  ratio SET_TO &lt;at&gt;div&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;diff_x&lt;closeparen&gt;&lt;comma&gt;&lt;at&gt;Value&lt;openparen&gt;diff_y&lt;closeparen&gt;&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Calculate_Bound_Ratios"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; diff_x SET_TO &lt;at&gt;min&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;xmax&lt;closeparen&gt;&lt;comma&gt;&lt;at&gt;Value&lt;openparen&gt;xmin&lt;closeparen&gt;&lt;closeparen&gt;  diff_y SET_TO &lt;at&gt;min&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;ymax&lt;closeparen&gt;&lt;comma&gt;&lt;at&gt;Value&lt;openparen&gt;ymin&lt;closeparen&gt;&lt;closeparen&gt;  ratio SET_TO &lt;at&gt;div&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;diff_x&lt;closeparen&gt;&lt;comma&gt;&lt;at&gt;Value&lt;openparen&gt;diff_y&lt;closeparen&gt;&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="9"
@@ -1454,12 +1515,12 @@
 #!     <XFORM_ATTR ATTR_NAME="xmin" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="ymax" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="ymin" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
-#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="Automatic"/>
+#!     <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;ratio&lt;closeparen&gt; &gt; 1"/>
 #!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="Automatic"/>
 #!     <XFORM_PARM PARM_NAME="TEST_DESCRIPTION" PARM_VALUE="&quot;&quot;"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
@@ -1487,16 +1548,16 @@
 #!     <XFORM_ATTR ATTR_NAME="xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
-#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; orientation SET_TO Portrait"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Portrait"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; orientation SET_TO Portrait"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="14"
@@ -1523,16 +1584,16 @@
 #!     <XFORM_ATTR ATTR_NAME="xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
-#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; orientation SET_TO Landscape"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Landscape"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; orientation SET_TO Landscape"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="17"
@@ -1559,8 +1620,8 @@
 #!     <XFORM_ATTR ATTR_NAME="xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Merger_Layer"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Merger_Layer"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="20"
@@ -1581,11 +1642,11 @@
 #!     <XFORM_ATTR ATTR_NAME="lganame" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="statecode" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="statename" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="KEEP_ATTRS" PARM_VALUE="lgacode,lganame,orientation,statecode,ratio,statename"/>
 #!     <XFORM_PARM PARM_NAME="KEEP_LIST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="KEEP_ATTRS" PARM_VALUE="lgacode,lganame,orientation,statecode,ratio,statename"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeKeeper"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -1699,13 +1760,16 @@
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 FME_PYTHON_VERSION 27
-GUI IGNORE SourceDataset_SPATIALITE_1,SPATIALITE_IN_EXPOSE_ATTRS_GROUP_SPATIALITE_1,SPATIALITE_IN_NETWORK_AUTHENTICATION_SPATIALITE_1,DestDataset_SPATIALITE_2,SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_2,SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_2,SPATIALITE_OUT_SPATIALITE_WRT_ADV_PARM_SPATIALITE_2,SPATIALITE_OUT_TRANSACTION_SIZE_SPATIALITE_2
-DEFAULT_MACRO SourceDataset_SPATIALITE $(FME_MF_DIR)Data\LGALayer.sqlite
-GUI MULTIFILE SourceDataset_SPATIALITE SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|* SpatiaLite Database
+GUI IGNORE SourceDataset_SPATIALITE_1,SPATIALITE_IN_EXPOSE_ATTRS_GROUP_SPATIALITE_1,SPATIALITE_IN_NETWORK_AUTHENTICATION_SPATIALITE_1,DestDataset_SPATIALITE_2,SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_2,SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_2,SPATIALITE_OUT_SPATIALITE_WRT_ADV_PARM_SPATIALITE_2,SPATIALITE_OUT_TRANSACTION_SIZE_SPATIALITE_2,DestDataset_SPATIALITE_3,SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_3,SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_3,SPATIALITE_OUT_SPATIALITE_WRT_ADV_PARM_SPATIALITE_3,SPATIALITE_OUT_TRANSACTION_SIZE_SPATIALITE_3
 DEFAULT_MACRO DestDataset_SPATIALITE $(FME_MF_DIR)Data\LGALayer.sqlite
 GUI FILENAME DestDataset_SPATIALITE SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|* SpatiaLite Database
-INCLUDE [ if {{$(SourceDataset_SPATIALITE)} == {}} { puts_real {Parameter 'SourceDataset_SPATIALITE' must be given a value.}; exit 1; }; ]
+DEFAULT_MACRO SourceDataset_SPATIALITE $(FME_MF_DIR)Data\LGALayer.sqlite
+GUI MULTIFILE SourceDataset_SPATIALITE SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|* SpatiaLite Database
+DEFAULT_MACRO DestDataset_SPATIALITE_4 $(FME_MF_DIR)Data\LGALayer_Output.sqlite
+GUI FILENAME DestDataset_SPATIALITE_4 SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|* SpatiaLite Database
 INCLUDE [ if {{$(DestDataset_SPATIALITE)} == {}} { puts_real {Parameter 'DestDataset_SPATIALITE' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_SPATIALITE)} == {}} { puts_real {Parameter 'SourceDataset_SPATIALITE' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_SPATIALITE_4)} == {}} { puts_real {Parameter 'DestDataset_SPATIALITE_4' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE SPATIALITE
@@ -1717,6 +1781,8 @@ MULTI_WRITER_DATASET_ORDER BY_ID
 MULTI_WRITER_FIRST_WRITER_ID 0
 MULTI_WRITER_TYPE{0} SPATIALITE
 MULTI_WRITER_KEYWORD{0} SPATIALITE_2
+MULTI_WRITER_TYPE{1} SPATIALITE
+MULTI_WRITER_KEYWORD{1} SPATIALITE_3
 #! END_WB_HEADER
 
 #! START_WB_HEADER
@@ -1770,7 +1836,7 @@ GUI MULTIFILE DestDataset_SPATIALITE_2 SpatiaLite_Database_Files(*.sqlite;*.db;*
 DEFAULT_MACRO SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_2 No
 SPATIALITE_2_OVERWRITE_DATASET "$(SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_2)"
 GUI OPTIONAL ACTIVECHECK SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_2 Yes%No,SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_2 Overwrite Existing Database:
-DEFAULT_MACRO SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_2 <Unused>
+DEFAULT_MACRO SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_2 $(FME_MF_DIR)Data\LGALayer.sqlite
 SPATIALITE_2_DATASET_TEMPLATE "$(SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_2)"
 GUI OPTIONAL FILENAME_MUSTEXIST SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_2 SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|* Template File:
 DEFAULT_MACRO SPATIALITE_OUT_GENERIC_GEOMETRY_SPATIALITE_2 No
@@ -1804,6 +1870,52 @@ DEFAULT_MACRO DestDataset_SPATIALITE_2 $(DestDataset_SPATIALITE)
 SPATIALITE_2_DATASET "$(DestDataset_SPATIALITE_2)"
 #! END_DEST_HEADER
 #! START_WB_HEADER
+MACRO WB_KEYWORD "SPATIALITE_3"
+#! END_WB_HEADER
+#! START_DEST_HEADER SPATIALITE SPATIALITE_3
+# ============================================================================
+# The following GUI line prompts for a file or connection to be used as the
+# the destination for the SpatiaLite writer.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be written.
+GUI MULTIFILE DestDataset_SPATIALITE_3 SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|* SpatiaLite Database
+DEFAULT_MACRO SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_3 No
+SPATIALITE_3_OVERWRITE_DATASET "$(SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_3)"
+GUI OPTIONAL ACTIVECHECK SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_3 Yes%No,SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_3 Overwrite Existing Database:
+DEFAULT_MACRO SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_3 
+SPATIALITE_3_DATASET_TEMPLATE "$(SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_3)"
+GUI OPTIONAL FILENAME_MUSTEXIST SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_3 SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|* Template File:
+DEFAULT_MACRO SPATIALITE_OUT_GENERIC_GEOMETRY_SPATIALITE_3 No
+SPATIALITE_3_GENERIC_GEOMETRY "$(SPATIALITE_OUT_GENERIC_GEOMETRY_SPATIALITE_3)"
+DEFAULT_MACRO SPATIALITE_OUT_COMPRESS_GEOMETRY_SPATIALITE_3 No
+SPATIALITE_3_COMPRESS_GEOMETRY "$(SPATIALITE_OUT_COMPRESS_GEOMETRY_SPATIALITE_3)"
+DEFAULT_MACRO SPATIALITE_OUT_CREATE_SPATIAL_INDEX_SPATIALITE_3 Yes
+SPATIALITE_3_CREATE_SPATIAL_INDEX "$(SPATIALITE_OUT_CREATE_SPATIAL_INDEX_SPATIALITE_3)"
+DEFAULT_MACRO SPATIALITE_OUT_SPATIALITE_WRT_ADV_PARM_SPATIALITE_3 
+GUI OPTIONAL DISCLOSUREGROUP SPATIALITE_OUT_SPATIALITE_WRT_ADV_PARM_SPATIALITE_3 SPATIALITE_OUT_TRANSACTION_SIZE Advanced
+DEFAULT_MACRO SPATIALITE_OUT_TRANSACTION_SIZE_SPATIALITE_3 1000
+SPATIALITE_3_TRANSACTION_SIZE "$(SPATIALITE_OUT_TRANSACTION_SIZE_SPATIALITE_3)"
+GUI INTEGER SPATIALITE_OUT_TRANSACTION_SIZE_SPATIALITE_3 Features Per Transaction:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO SPATIALITE_OUT_DESTINATION_DATASETTYPE_VALIDATION_SPATIALITE_3 Yes
+SPATIALITE_3_DESTINATION_DATASETTYPE_VALIDATION "$(SPATIALITE_OUT_DESTINATION_DATASETTYPE_VALIDATION_SPATIALITE_3)"
+DEFAULT_MACRO SPATIALITE_OUT_COORDINATE_SYSTEM_GRANULARITY_SPATIALITE_3 FEATURE_TYPE
+SPATIALITE_3_COORDINATE_SYSTEM_GRANULARITY "$(SPATIALITE_OUT_COORDINATE_SYSTEM_GRANULARITY_SPATIALITE_3)"
+DEFAULT_MACRO SPATIALITE_OUT_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES_SPATIALITE_3 YES
+SPATIALITE_3_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES "$(SPATIALITE_OUT_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES_SPATIALITE_3)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_SPATIALITE_3 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER SPATIALITE SPATIALITE_3
+DEFAULT_MACRO DestDataset_SPATIALITE_3 $(DestDataset_SPATIALITE_4)
+SPATIALITE_3_DATASET "$(DestDataset_SPATIALITE_3)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
 #! END_WB_HEADER
 
 #! END_HEADER
@@ -1820,6 +1932,7 @@ MAPPING_FILE_ID Workspace
 LOG_FILTER_MASK -1
 DEFAULT_MACRO DATASET_KEYWORD_SPATIALITE_1 SPATIALITE_1
 DEFAULT_MACRO DATASET_KEYWORD_SPATIALITE_2 SPATIALITE_2
+DEFAULT_MACRO DATASET_KEYWORD_SPATIALITE_3 SPATIALITE_3
 # -------------------------------------------------------------------------
 
 SPATIALITE_1_READER_META_ATTRIBUTES fme_feature_type
@@ -1864,20 +1977,20 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME Portrait    INPUT  FEATURE_TYPE T
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * SortFactory    FACTORY_NAME Merger_Layer    INPUT  FEATURE_TYPE Landscape_OUTPUT    INPUT  FEATURE_TYPE Portrait_OUTPUT    OUTPUT SORTED FEATURE_TYPE Merger_Layer_OUTPUT
+FACTORY_DEF * SortFactory    FACTORY_NAME Merger_Layer    INPUT  FEATURE_TYPE Portrait_OUTPUT    INPUT  FEATURE_TYPE Landscape_OUTPUT    OUTPUT SORTED FEATURE_TYPE Merger_Layer_OUTPUT
 
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_913f03ee_89f1_4611_991f_c3a50aa1ef756_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_7659e8e4_10d3_4efb_9a00_de9b8dd140184_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE Merger_Layer_OUTPUT    OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,lgacode,lganame,orientation,statecode,ratio,statename,fme_pcre_match,"^fme_$(AttributeKeeper_913f03ee_89f1_4611_991f_c3a50aa1ef756_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE Merger_Layer_OUTPUT    OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,lgacode,lganame,orientation,statecode,ratio,statename,fme_pcre_match,"^fme_$(AttributeKeeper_7659e8e4_10d3_4efb_9a00_de9b8dd140184_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeKeeper_OUTPUT TO SPATIALITE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>layers_with_orentation<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeKeeper_OUTPUT TO SPATIALITE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>adminbounds_output<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
-SPATIALITE_2_DEF layers_with_orentation   spatialite_type              wkb_polygon   spatialite_overwrite_tables  deprecated   spatialite_create_spatial_index Yes   spatialite_compress_geometry No   fme_feature_operation        INSERT   fme_table_handling           CREATE_IF_MISSING   fme_selection_method         MATCH_ID   lgacode                      string(10)   lganame                      string(50)   statecode                    string(10)   statename                    string(25)   ratio                        real64   orientation                  string(200)
+SPATIALITE_3_DEF adminbounds_output   spatialite_type              wkb_polygon   spatialite_overwrite_tables  deprecated   spatialite_create_spatial_index Yes   spatialite_compress_geometry No   fme_feature_operation        INSERT   fme_table_handling           CREATE_IF_MISSING   fme_selection_method         MATCH_ID   lgacode                      string(10)   lganame                      string(50)   statecode                    string(10)   statename                    string(25)   ratio                        real64   orientation                  string(200)
